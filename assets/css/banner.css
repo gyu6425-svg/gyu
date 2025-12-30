@@ -1,0 +1,57 @@
+#visual {
+    width: 100%;
+    overflow: hidden;
+}
+#visual .main-banner {
+}
+#visual .main-banner .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#visual .main-banner .swiper-slide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(
+        110deg,
+        rgba(255, 255, 255, 0) 76.38%,
+        rgba(94, 43, 184, 0.4) 96.97%
+    ); */
+}
+#visual .main-banner .swiper-slide img {
+}
+
+#visual .main-banner .swiper-slide h2 {
+    position: absolute;
+    right: 130px;
+    bottom: 250px;
+    top: auto;
+    left: auto;
+    color: #fff;
+    font-size: 85px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+}
+#visual .main-banner .swiper-slide .more {
+    position: absolute;
+    right: 130px;
+    bottom: 200px;
+    top: auto;
+    left: auto;
+    border: 1px solid #fff;
+    display: flex;
+    width: 140px;
+    padding: 18px 10px;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    background: #fff;
+}
+#visual .main-banner .swiper-slide .more a {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+}

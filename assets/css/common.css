@@ -1,0 +1,108 @@
+/* 전체페이지 공통구조 */
+
+#wrap {
+    width: 100%;
+    min-width: 1600px;
+}
+
+#header,
+#visual,
+#content,
+#footer {
+    width: 100%;
+}
+
+.inner {
+    width: 1680px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+#header {
+    background: #fff;
+}
+#header .inner {
+    height: 88px;
+    background: #fff;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .inner:first-child {
+    margin-bottom: 48px;
+}
+
+#header .search {
+    margin-left: 40px;
+    margin-right: auto;
+    display: flex;
+    width: 615.305px;
+    height: 80px;
+
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+#header .search .search-icon {
+}
+#header .search .search-icon i {
+    padding: 20px;
+    font-size: 28px;
+    height: 28px;
+    color: #5e2bb8;
+}
+
+#header .gnb1 {
+    /* width: 1680px; */
+    height: 88px;
+    display: flex;
+    gap: 24px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#header .gnb1 li {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+#header .gnb2 li {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+}
+#header .gnb1 li:first-child {
+    width: 180px;
+    padding: 18px 6px;
+    align-items: center;
+    border-radius: 12px;
+    background: #5e2bb8;
+    text-align: center;
+    cursor: pointer;
+}
+#header .gnb1 li:first-child a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#header .gnb1 li:last-child {
+    margin-left: 30px;
+}
+#header .gnb1 .all-menu {
+    font-size: 32px;
+    cursor: pointer;
+}
+#header .gnb2 {
+    margin: auto;
+    display: flex;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}

@@ -66,9 +66,14 @@
     align-items: center;
 }
 #header .gnb1 li {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     color: #000;
+}
+#header .gnb1 li a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #header .gnb2 li {
@@ -77,18 +82,10 @@
     color: #000;
 }
 #header .gnb1 li:first-child {
-    width: 180px;
-    padding: 18px 6px;
-    align-items: center;
-    border-radius: 12px;
-    background: #5e2bb8;
-    text-align: center;
     cursor: pointer;
 }
 #header .gnb1 li:first-child a {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    color: #5e2bb8;
 }
 
 #header .gnb1 li:last-child {

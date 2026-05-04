@@ -1,5 +1,183 @@
+/* ================================
+   예약 검색 섹션
+   ================================ */
+.booking-search {
+    width: 1400px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.booking-tabs-wrap {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -30px;
+}
+
+.booking-tabs {
+    width: 750px;
+    height: 60px;
+    background: #5e2bb8;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    gap: 33.5px;
+    list-style: none;
+}
+
+.booking-tabs .tab {
+    flex: 0 0 120px;
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.booking-tabs .tab a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.booking-tabs .tab.active,
+.booking-tabs .tab:not(.active):hover {
+    background: #ffffff;
+}
+
+.booking-tabs .tab.active a {
+    color: #5e2bb8;
+    font-weight: 600;
+}
+
+.booking-tabs .tab:not(.active):hover a {
+    color: #5e2bb8;
+}
+
+.booking-filter {
+    width: 1400px;
+    height: 220px;
+    background: #fafafa;
+    border-radius: 18px;
+    /* box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09); */
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 50px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 8px;
+}
+
+.booking-filter .filter-header .flight-type {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    padding: 10px 12px;
+    display: inline-flex;
+    align-items: center;
+    /* gap: 8px; */
+}
+
+.booking-filter .filter-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 8px; */
+}
+
+.booking-filter .filter-cards-row {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.filter-card {
+    width: 226px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    transition: background 0.15s;
+    border-radius: 12px;
+}
+
+.filter-card:hover {
+    background: #ebebeb;
+}
+
+.filter-card .card-label {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+
+.filter-card .card-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+}
+
+.filter-card .card-value.placeholder {
+    color: #999;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.filter-divider {
+    width: 1px;
+    height: 40px;
+    background: #d0d0d0;
+    flex-shrink: 0;
+}
+
+.booking-search-btn {
+    width: 160px;
+    height: 80px;
+    background: #5e2bb8;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s;
+}
+
+.booking-search-btn:hover {
+    background: #4a2291;
+}
+
+/* ================================ */
+
 #visual {
     width: 100%;
+    margin-top: 40px;
     overflow: hidden;
 }
 #visual .main-banner {
@@ -32,7 +210,9 @@
     font-size: 85px;
     font-weight: 700;
     margin-bottom: 36px;
-    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow:
+        0 8px 8px rgba(0, 0, 0, 0.25),
+        0 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 100;
 }
 #visual .main-banner .swiper-slide .more {

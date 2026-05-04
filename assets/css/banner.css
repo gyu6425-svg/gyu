@@ -92,7 +92,7 @@
     color: #555;
     cursor: pointer;
     border: 1px solid #d8d8d8;
-    border-radius: 18px;
+    border-radius: 10px;
     padding: 10px 12px;
     display: inline-flex;
     align-items: center;
@@ -183,59 +183,67 @@
     width: 100%;
     margin-top: 40px;
     overflow: hidden;
+    padding: 20px 0 50px;
 }
 #visual .main-banner {
+    overflow: visible;
 }
 #visual .main-banner .swiper-slide {
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-#visual .main-banner .swiper-slide::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    /* background: linear-gradient(
-        110deg,
-        rgba(255, 255, 255, 0) 76.38%,
-        rgba(94, 43, 184, 0.4) 96.97%
-    ); */
+    width: 1116px;
+    height: 472px;
+    border-radius: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 #visual .main-banner .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
 #visual .main-banner .swiper-slide h2 {
     position: absolute;
-    right: 130px;
-    bottom: 250px;
+    right: 48px;
+    bottom: 76px;
     top: auto;
     left: auto;
     color: #fff;
-    font-size: 85px;
+    font-size: 40px;
     font-weight: 700;
-    margin-bottom: 36px;
+    margin-bottom: 0;
     text-shadow:
-        0 8px 8px rgba(0, 0, 0, 0.25),
-        0 4px 4px rgba(0, 0, 0, 0.25);
+        0 2px 8px rgba(0, 0, 0, 0.35),
+        0 1px 4px rgba(0, 0, 0, 0.25);
     z-index: 100;
 }
 #visual .main-banner .swiper-slide .more {
     position: absolute;
-    right: 130px;
-    bottom: 200px;
+    right: 48px;
+    bottom: 28px;
     top: auto;
     left: auto;
-    border: 1px solid #fff;
+    width: 87px;
+    height: 35px;
+    background: #fff;
+    border: none;
+    border-radius: 12px;
     display: flex;
-    width: 140px;
-    padding: 18px 10px;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 100;
-    background: #fff;
+    padding: 0;
+    transition: opacity 0.2s;
+}
+#visual .main-banner .swiper-slide .more:hover {
+    opacity: 0.72;
 }
 #visual .main-banner .swiper-slide .more a {
     color: #000;
-    font-weight: 700;
-    font-size: 18px;
+    font-size: 12px;
+    font-weight: 500;
+}
+#visual .main-banner .swiper-pagination {
+    bottom: -34px;
 }

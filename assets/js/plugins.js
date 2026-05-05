@@ -42,6 +42,11 @@ const bestSwiper = new Swiper('.best-banner', {
     },
 });
 
+const timesaleSwiper = new Swiper('.timesale-banner', {
+    slidesPerView: 'auto',
+    spaceBetween: 60,
+});
+
 const packSwiper = new Swiper('.pack-banner', {
     slidesPerView: 3,
     spaceBetween: 40,
